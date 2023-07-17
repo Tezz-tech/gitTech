@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: open-sans, sans-serif;
+}
+
+body{
+    background-color: #f1efe9;
+}
+
+nav{
+    height: 180px;
+    padding-top: 20px;
+    position: fixed;
+    width: 100%;
+    background-color: #f1efe9;
+    z-index: 99;
+    box-shadow: 5px 10px 8px 10px #f1efe9;
+}
+
+nav .nav_bar{
+    width: 98%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    height: 180px;
+    background-color: #f1efe9;
+}
+
+.nav_bar .left{
+    width: 15%;
+    height: 140px;
+    padding-top: 38px;
+    margin-left: 20px;
+}
+
+.nav_bar .left img{
+    height: 40px;
+}
+
+.nav_bar .middle{
+    width: 10%;
+    height: 140px;
+}
+
+.nav_bar .middle img{
+    height: 130px;
+}
+
+.nav_bar .right{
+    width: 15%;
+    height: 140px;
+    padding-top: 35px;
+    display: flex;
+}
+
+.nav_bar .right img{
+    margin-right: 30px;
+    height: 25px;
+    width: 25px;
+    margin-top: 7px;
+}
+
+.nav_bar .right button{
+    background-color: transparent;
+    color: #161615;
+    letter-spacing: 5px;
+    padding: 5px 10px;
+    height: 40px;
+    font-weight: 1000;
+    font-size: 11px;
+    border: none;
+    background-image: linear-gradient(to right, #f1efe9, #d4c6e6);
+    transition: 0.5s ease-in-out;
+}
+
+.nav_bar .right button:hover{
+    background-image: linear-gradient(to right, #f1efe9, #f1efe9);
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#wrapper .top {
+    animation: fadeOut 10s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+#wrapper .bottom {
+    animation: fade 10s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+
+    50% {
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.banner1{
+    height: 1100px;
+    padding-top: 400px;
+}
+
+.banner1 .ban1{
+    width: 75%;
+    height: 1100px;
+    margin: auto;
+}
+
+.ban1 .top{
+   margin-left: 1200px;
+   margin-bottom: -400px;
+   width: 400px;
+}
+
+.ban1 .top h3{
+    font-weight: 1000;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.ban1 .top p{
+    color: #575555;
+    margin-bottom: 10px;
+}
+
+.ban1 .top img{
+    height: 150px;
+    margin-left: 20px;
+}
+
+.ban1 .first{
+    height: 700px;
+    width: 60%;
+}
+
+.ban1 .first p{
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.ban1 .first img{
+    box-shadow: 5px 10px 8px 10px rgb(112, 112, 112)
+}
+
+.ban1 .first img:hover{
+    box-shadow: none;
+}
+
+.ban1 .second{
+    height: 480px;
+    width: 80%;
+    margin-top: -250px;
+    margin-left: 24%;
+    background-color: #e2ded1;
+}
+
+.ban1 .second img{
+    /* margin-top: 380px; */
+    margin-left: 300px;
+}
+
+#score{
+    margin-top: 104px;
+    margin-left: -5px;
+}
+
+.banner2{
+    width: 100%;
+    height: 100px;
+}
+
+.banner2 .ban2{
+    width: 75%;
+    margin: auto;
+    height: 100px;
+    display: flex;
+}
+
+.ban2 .con2{
+    height: 50px;
+    width: 280px;
+    background-image: linear-gradient(to right, #f1efe9, #d4c6e6);
+    display: flex;
+}
+
+.banner2 .ban2 button{
+    background-color: transparent;
+    color: #161615;
+    letter-spacing: 5px;
+    padding: 10px 10px 15px 10px;
+    height: 50px;
+    font-weight: 1000;
+    font-size: 11px;
+    border: none;
+    
+    transition: 0.5s ease-in-out;
+}
+
+.ban2 img{
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    
+}
+
+.banner3{
+    height: 500px;
+    margin-top: 30px;
+}
+
+.banner3 .ban3{
+    width: 75%;
+    height: 500px;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+}
+
+.banner3 .ban3 .left{
+    width: 30%;
+    height: 500px;
+}
+
+.ban3 .left .container{
+    position: relative;
+    height: 200px;
+    width: 400px;
+}
+
+.ban3 .left .container img{
+    height: 220px;
+    width: 350px;
+}
+
+.ban3 .left .overlay {
+ position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 220px;
+  width: 350px;
+  opacity: 0;
+  transition: .8s ease-in-out;
+  background-color: black
+  
+}
+
+.ban3 .container .overlay .top p{
+    color: #e2ded1;
+}
+
+.container .overlay .top .right img {
+    height: 10px;
+    width: 10px;
+    background-color: #161615;
+}
+
+.container .overlay .top  {
+   display: flex;
+   justify-content: space-between;
+}
+
+.container .overlay .top .right img {
+    height: 25px;
+    width: 25px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.container .overlay .top .right{
+    height: 10px;
+    width: 50%;
+    text-align: right;
+}
+
+.container .overlay .top .left{
+    height: 10px;
+    width: 50%;
+    margin-top: 15px;
+    font-weight: 1000;
+    font-size: 11px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.container .overlay .bottom{
+    display: flex;
+    height: 200px;
+}
+
+.container .overlay .bottom button{
+    margin-left: 100px;
+    margin-top: 60px;
+    margin-right: 10px;
+    border: none;
+    background-color: transparent;
+    color: #e2ded1;
+    letter-spacing: 5px;
+    padding: 10px 10px 15px 10px;
+    height: 50px;
+    font-weight: 1000;
+    font-size: 17px;
+    border: none;
+    transition: 0.5s ease-in-out;
+}
+
+.container .overlay .bottom img{
+    height: 30px;
+    width: 20px;
+    margin: auto;
+}
+
+
+
+.ban3 .left .container:hover .overlay {
+  opacity: 0.7;
+}
+
+.ban3 .left h3{
+    margin-top: 50px;
+    font-weight: 1000;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.ban3 .left .txt{
+    display: flex;
+    margin-top: 10px;
+}
+
+.ban3 .left .txt p{
+    margin-right: 20px;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.ban3 .left .txt p img{
+    height: 18px;
+    width: 18px;
+}
+
+.banner4{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 100px;
+}
+
+.banner4 .ban4{
+    width: 75%;
+    margin: auto;
+    height: 100px;
+    display: flex;
+}
+
+.ban4 .con4{
+    height: 50px;
+    width: 120px;
+    background-image: linear-gradient(to right, #f1efe9, #d4c6e6);
+    display: flex;
+    margin: auto;
+}
+
+.banner4 .ban4 button{
+    background-color: transparent;
+    color: #161615;
+    letter-spacing: 5px;
+    padding: 10px 10px 15px 10px;
+    height: 50px;
+    font-weight: 1000;
+    font-size: 17px;
+    border: none;
+    
+    transition: 0.5s ease-in-out;
+}
+
+.ban4 img{
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    
+}
+
+.banner5{
+    height: 150px;
+    margin-bottom: 50px;
+}
+
+.ban5{
+    height: 150px;
+    width: 40%;
+    margin: auto;
+    justify-content: space-between;
+    display:flex;
+    background-color: #dcd8cd;
+}
+
+.ban5 img{
+    height: 150px;
+    width: 100%;
+}
+
+.top_arrow{
+    margin-left: 1600px;
+    margin-top: -350px;
+}
+
+.banner6{
+    margin-top: 70px;
+    height: 80px;
+    margin-bottom: 100px;
+}
+
+.ban6{
+    width: 97%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.ban6 .middle{
+    display: flex;
+    width: 15%;
+}
+
+.ban6 .middle img{
+    margin: auto;
+    height: 25px;
+}
+
+.ban6 .left{
+    width: 25%;
+}
+
+.ban6 p{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 22px;
+}
+
+.ban6 .right{
+    width: 25%;
+    text-align: right;
+}
